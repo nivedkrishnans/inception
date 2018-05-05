@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Frequently Asked Questions</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src='jquery-3.3.1.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('div.plus').click(function(){
+                $(this).parent().siblings('div.answer').slideToggle('slow');
+                $(this).children('div.bar2').fadeToggle('slow');
+                });    
+            });
+    </script>
+</head>
+<body>
+    <div id='sidebar'></div>
+    <div id='main'>
+        <div id='heading'>Frequently Asked Questions</div>
+        <div id='introduction'>Have any doubts about Pravega? Well, you have come to the right place. Browse through the frequently asked questions to see if your doubts have already been asked by other people. If you dont find your required answers here, feel free to contact us.</div>
+        <div class='question'>
+            <div class='qhead'>Question1
+                <div class='plus' id='q1'>
+                    <div class='bar1'></div>
+                    <div class='bar2' id='b1'></div>
+                </div>
+            </div>
+            <div class='answer' id='a1'>Answer to this question is............................................................................................................................adflakdsflakjsfhkjdsfkjlfnfkvmfnjvkfhgjfdhkjgakvmc,v,mcxkbjsfghereioghioehgkrngkmf,dsvm,bslnrkgh;rlkaggklglksdfgglk...................................................................................................................................................................................................................................................
+            </div>
+        </div>
+        <div class='question'>
+            <div class='qhead'>Question2
+                <div class='plus' id='q2'>
+                    <div class='bar1'></div>
+                    <div class='bar2' id='b2'></div>
+                </div>
+            </div>
+            <div class='answer' id='a2'>kasfkladsjfkljdklfj
+            </div>
+        </div>
+    </div>
+</body>
+</html>
